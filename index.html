@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cinema Soft</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Escolha um filme:</label>
+      <select id="movie">
+        <option value="10">The Batman ($10)</option>
+        <option value="12">Doutor Estranho no multiverso da loucura ($12)</option>
+        <option value="8">Aquaman 2 ($8)</option>
+        <option value="9">Eduardo e Mônica ($9)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selecionado</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Reservado</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      Voce selecionou <span id="count">0</span> cadeiras. Valor total: $<span
+        id="total"
+        >0</span
+      >
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
